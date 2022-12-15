@@ -44,5 +44,10 @@ public class Day03_C7_JavaFaker {
         //raskele rakam
         System.out.println(faker.number().digits(6));
         System.out.println(faker.avatar().image());
+
+        System.out.println(faker.color().name());
+        System.out.println(faker.hobbit().character());
+        System.out.println(faker.university().name());
+        System.out.println(faker.artist().name());
     }
 }
