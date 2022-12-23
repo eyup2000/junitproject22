@@ -24,10 +24,16 @@ public class Day06_C13_IFrameOrnek {
     }
 
     @Test
-    public void IFrameSayisi() {
-
-     List <WebElement> iframeElement = driver.findElements(By.xpath("//iframe"));
-     int iframeSyisi = iframeElement.size();
+    public void iFrameSayisi() {
+        List<WebElement> iframeelement = driver.findElements(By.xpath("//iframe"));
+        int iframesayisi = iframeelement.size();
         System.out.println(driver.findElements(By.xpath("//iframe")).size());
+
+        driver.get("https://the-internet.herokuapp.com/iframe");
+        System.out.println(driver.findElements(By.xpath("//iframe")).size());
+        System.out.println(driver.findElements(By.tagName("iframe")).size());
+
     }
+
 }
+
