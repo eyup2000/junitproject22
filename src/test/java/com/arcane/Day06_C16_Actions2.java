@@ -35,7 +35,7 @@ public class Day06_C16_Actions2 {
         //2.adım çalışmak istenilen elementi locat et
        WebElement accountList = driver.findElement(By.id("nav-link-accountList"));
 
-       //3.adımhaver over yap
+       //3.adım haver over yap
         actions.moveToElement(accountList).perform();
         driver.findElement(By.linkText("Account")).click();
 
