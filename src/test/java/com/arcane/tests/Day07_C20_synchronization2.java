@@ -1,7 +1,10 @@
 package com.arcane.tests;
 
 import com.arcane.utilities.TestBase;
+import org.junit.Assert;
 import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 public class Day07_C20_synchronization2 extends TestBase {
 
@@ -19,6 +22,10 @@ public class Day07_C20_synchronization2 extends TestBase {
      */
 @Test
     public void isEnabled(){
+driver.get("https://the-internet.herokuapp.com/dynamic_controls");
+    driver.findElement(By.xpath("(//button[@type='button'])[2]")).click();
+ WebElement test =driver.findElement(By.xpath("//p[@id='message']"));
+    //Assert.assertTrue(test.getText().equals("It's gone!"));
 
 }
 }
