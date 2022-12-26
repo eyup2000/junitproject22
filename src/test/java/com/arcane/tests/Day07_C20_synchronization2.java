@@ -25,7 +25,7 @@ public class Day07_C20_synchronization2 extends TestBase {
 driver.get("https://the-internet.herokuapp.com/dynamic_controls");
     driver.findElement(By.xpath("(//button[@type='button'])[2]")).click();
  WebElement test =driver.findElement(By.xpath("//p[@id='message']"));
-    //Assert.assertTrue(test.getText().equals("It's gone!"));
+    Assert.assertTrue(test.getText().equals("It's enabled!"));
 
 }
 }
