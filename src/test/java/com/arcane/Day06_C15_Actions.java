@@ -1,6 +1,7 @@
 package com.arcane;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -31,12 +32,22 @@ public class Day06_C15_Actions {
 //   2-  When box (kutucuk) Right clicks edilir
         //1.adım action object oluştur
         Actions actions = new Actions(driver);
+
         //2.adım çalışmak istenilen elementi locat et
       WebElement box = driver.findElement(By.id("hot-spot"));
+
         //3.adım action object oluştu , elementi bulduk aldık right(sağ tıkla ) click yap perform() sonda mutlaka kullan
         actions.contextClick(box).perform();
+
 //   3- Then “You selected a context menu” alert mesajini verify et
+        Assert.assertEquals("You selected a context menu",driver.switchTo().alert().getText());
+//        String expected = "You selected a context menu";
+//        String actual = driver.switchTo().alert().getText();
+//        Assert.assertEquals(expected,actual);
+
 //   4- Then alert'u accept et
+        driver.switchTo().alert().accept();
+
 
 
     }
