@@ -66,7 +66,7 @@ public class Day04_C9_DropDown {
     //select ovjecy oluştur
     Select select = new Select(dropDown);
     //3 methoddan birini kullanarak element bulun ==> selectByIndex() , selectByValue , selectByVisibleTest
-
+    select.selectByValue("2");
 }
 //4.printAllTest methodu olusturun ve tum dropdown value (degerlerini) yazdirin
 @Test

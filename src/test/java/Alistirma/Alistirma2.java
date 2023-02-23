@@ -1,4 +1,4 @@
-package Note;
+package Alistirma;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Before;

@@ -164,7 +164,7 @@ public class Day04_C10_HesapOluşturma {
 
         }
 
-      ;
+      driver.close();
 
 
 
