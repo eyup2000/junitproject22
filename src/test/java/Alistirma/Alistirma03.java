@@ -11,7 +11,7 @@ import org.openqa.selenium.interactions.Actions;
 
 import java.util.concurrent.TimeUnit;
 
-public class A2_C3 {
+public class Alistirma03 {
     /*
     test method olustur : hoverOver() and test the following scenario:
             1- Given kullanici  https://www.amazon.com/ adresine gider
@@ -31,11 +31,15 @@ public class A2_C3 {
     public void windowHandle() {
 //        1- Given kullanici  https://www.amazon.com/ adresine gider
         driver.get("https://www.amazon.com/");
+
 //        2- When kullanici “Account” linkini click eder
         Actions actions = new Actions(driver);
+
        WebElement actionsElemet = driver.findElement(By.id("nav_ya_signin"));
        actions.moveToElement(actionsElemet).perform();
+
        driver.findElement(By.linkText("Account")).click();
 //        3- Then page title'in “Your Account” icerdigini verify et
+        System.out.println("driver.getTitle() = " + driver.getTitle());
     }
 }

@@ -5,7 +5,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 
-public class A3_C3 extends TestBase {
+public class Alistirma07 extends TestBase {
     @Test
     public void alistirma() {
         driver.navigate().to("https://demoqa.com/alerts");

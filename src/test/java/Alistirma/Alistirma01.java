@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.util.concurrent.TimeUnit;
 
-public class A1_C1 {
+public class Alistirma01 {
     Faker faker = new Faker();
     WebDriver driver;
 

@@ -5,7 +5,7 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 
-public class A4_C4 extends TestBase {
+public class Alistirma04 extends TestBase {
     @Test
     public void alistirma(){
         driver.get("https://www.amazon.com/");
