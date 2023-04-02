@@ -41,7 +41,7 @@ public class Alıştırma09 {
         WebElement submitButton= driver.findElement(By.id("submit"));
         submitButton.click();
 
-     WebElement assertt =driver.findElement(By.xpath("//div[@class='border col-md-12 col-sm-12']"));
+        WebElement assertt =driver.findElement(By.xpath("//div[@class='border col-md-12 col-sm-12']"));
 
         Assert.assertTrue(assertt.isDisplayed());
 
